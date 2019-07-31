@@ -12,6 +12,7 @@ private section.
   methods M1
     importing
       !IV1 type STRING .
+  methods M2 .
 ENDCLASS.
 
 
@@ -21,5 +22,10 @@ CLASS ZCL_ABAPGIT_A51 IMPLEMENTATION.
 
   method M1.
     data(lv_string) = iv1.
+  endmethod.
+
+
+  method M2.
+    data abc type i.
   endmethod.
 ENDCLASS.
